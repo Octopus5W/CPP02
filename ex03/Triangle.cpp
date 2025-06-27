@@ -18,7 +18,7 @@ bool Triangle::bsp(Point const a, Point const b, Point const c, Point const poin
 	float cp1 = cross_product(a, b, point);
 	float cp2 = cross_product(b, c, point);
 	float cp3 = cross_product(c, a, point);
-	bool result = (cp1 >= 0 && cp2 >= 0 && cp3 >= 0) || (cp1 <= 0 && cp2 <= 0 && cp3 <= 0);
+	bool result = (cp1 > 0 && cp2 > 0 && cp3 > 0) || (cp1 < 0 && cp2 < 0 && cp3 < 0);
 	if (cp1 == 0 || cp2 == 0 || cp3 == 0) {
 		std::cout << "Point is on the edge of the triangle." << std::endl;
 	}
