@@ -2,7 +2,6 @@
 #define TRIANGLE_HPP
 
 #include "Point.hpp"
-#include "Fixed.hpp"
 
 class Triangle {
 	private:
